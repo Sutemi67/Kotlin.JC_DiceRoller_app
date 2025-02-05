@@ -44,7 +44,7 @@ fun DiceRollerApp(){
 @Composable
 fun DiceWithButtonsAndImage(){
 
-    var result by remember {mutableStateOf(1)}
+    var result by remember { mutableIntStateOf(1) }
     val textVariable  = when (result){
         3 -> "Ы"
         else -> " "
